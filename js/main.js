@@ -25,7 +25,7 @@
     /*********************************
      * PARTNERS UPDATE
      ********************************/
-    const partners = [
+    const watchLive = [
         ['lrt.png', 'https://www.lrt.lt/'],
         ['lnk-grupe-2.PNG', 'https://lnk.lt/', 2],
         ['lr-grupe.png', 'https://www.lrytas.lt/'],
@@ -36,6 +36,18 @@
         ['rusradio-lt.png', 'https://rusradio.lt/'],
         ['rock-fm.png', 'https://rockfm.lt/'],
         ['zip-fm.png', 'https://www.zipfm.lt/'],
+    ];
+    const partners = [
+        // ['lrt.png', 'https://www.lrt.lt/'],
+        // ['lnk-grupe-2.PNG', 'https://lnk.lt/', 2],
+        // ['lr-grupe.png', 'https://www.lrytas.lt/'],
+        // ['15min.png', 'https://www.15min.lt/'],
+        // ['delfi.png', 'https://www.delfi.lt/'],
+        // ['rc.png', 'https://www.rc.lt/'],
+        // ['relax-fm.png', 'https://relaxfm.lt/'],
+        // ['rusradio-lt.png', 'https://rusradio.lt/'],
+        // ['rock-fm.png', 'https://rockfm.lt/'],
+        // ['zip-fm.png', 'https://www.zipfm.lt/'],
         ['susisiekimo-paslaugos.png', 'https://www.vilniaus-susisiekimo-paslaugos.lt'],
         ['vilnius.png', 'https://vilnius.lt/'],
         ['lsa.png', 'https://www.savivaldybiu-asociacija.lt/'],
@@ -53,26 +65,27 @@
         ['RIMI.png', 'https://www.rimi.lt/'],
         ['citybee.png', 'https://www.citybee.lt/'],
         ['IKI.png', 'https://www.iki.lt/'],
+        ['keliautojai.png', 'https://lkakeliautojai.lt/'],
     ];
 
-    function renderPartners() {
-        const DOMpartners = document.querySelector('#giedoti_kviecia .content');
-        const partnersCount = partners.length;
-        let partnersHTML = '';
+    function renderPartners( selector, list ) {
+        const DOMlist = document.querySelector(selector);
+        const listCount = list.length;
+        let listHTML = '';
         let size = '';
-        for ( let i=0; i<partnersCount; i++ ) {
-            const partner = partners[i];
+        for ( let i=0; i<listCount; i++ ) {
+            const partner = list[i];
             size = '';
             if ( partner[2] && partner[2] > 1 ) {
                 size = ' double';
             }
-            partnersHTML += '<div class="partner' + size + '">\
+            listHTML += '<div class="partner' + size + '">\
                                 <a href="' + partner[1] + '" target="_blank" rel="noreferrer">\
                                     <img src="./img/sponsors/min/' + partner[0] + '" alt="Kviečia giedoti Tautišką giesmę">\
                                 </a>\
                             </div>';
         }
-        DOMpartners.innerHTML = partnersHTML;
+        DOMlist.innerHTML = listHTML;
     }
 
     /*********************************
@@ -81,7 +94,8 @@
 
     window.addEventListener('load', function(){
         insertYoutube();
-        renderPartners();
+        renderPartners('#stebek_rengini .content', watchLive);
+        renderPartners('#giedoti_kviecia .content', partners);
         runClock();
     });
 

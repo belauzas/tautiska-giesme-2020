@@ -576,6 +576,7 @@ section.yellow {
     .full-column h2 {
         width: calc(100% + 70px);
         margin-top: -1px;
+        text-align: center;
     }
         .full-column h2 > .end {
             bottom: unset;
