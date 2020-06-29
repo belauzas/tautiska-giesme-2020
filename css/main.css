@@ -178,8 +178,18 @@ body {
 header {
     width: 100%;
     padding: 0 20px;
-    background-color: var(--yellow);
+    background-color: #F3BC00;
+    position: relative;
 }
+    header::after {
+        content: '';
+        position: absolute;
+        bottom: -24px;
+        right: 0;
+        left: 0;
+        height: 24px;
+        background-image: url(../img/orange-wave.png);
+    }
     header > img {
         max-width: 100%;
         max-height: 250px;
@@ -301,6 +311,55 @@ section {
                     line-height: 20px;
                 }
 
+.counter-title {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: var(--green-dark);
+    text-transform: uppercase;
+}
+
+.clock {
+    display: flex;
+    justify-content: center;
+    flex-flow: row;
+    flex-wrap: wrap;
+}
+    .clock > .time {
+        min-width: 54px;
+        margin: 15px 30px 15px 0;
+        text-align: center;
+        position: relative;
+    }
+        .clock > .time + .time::before {
+            content: ':';
+            position: absolute;
+            top: 0;
+            left: -19px;
+            font-size: 32px;
+            line-height: 40px;
+            color: var(--green-dark);
+        }
+        .clock .value {
+            width: 100%;
+            padding: 0 10px;
+            font-size: 32px;
+            line-height: 50px;
+            color: var(--green-dark);
+            border: 2px solid #3f3f3d;
+            border-radius: 10px;
+        }
+        .clock .label {
+            font-size: 12px;
+            line-height: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            position: absolute;
+            left: 100%;
+            bottom: -8px;
+        }
+
 section.green {
     border-color: var(--green);
 }
@@ -408,7 +467,7 @@ section.yellow {
     main {
         width: 960px;
         padding: 15px 0;
-        margin: 0 calc(50% - 480px);
+        margin: 45px calc(50% - 480px) 0;
     }
         main > .column {
             width: 450px;
@@ -418,6 +477,10 @@ section.yellow {
                 float: right;
             }
     
+    .counter-title {
+        font-size: 32px;
+        line-height: 40px;
+    }
     h2 {
         padding: 5px 25px;
         margin: 5px -10px 15px -35px;

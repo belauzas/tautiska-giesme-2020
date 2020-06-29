@@ -1,5 +1,7 @@
 (function(){
-    const youtubeLink = 'I9JIVpu3osg';
+    const youtubeLink = 'I9JIVpu3osg',
+        youtubeLinkTitle = 'Tautiška giesmė aplink pasaulį 2020',
+        timerDate = 'Jul 6, 2020 21:00';
 
     /*********************************
      * H2 UPDATE
@@ -65,8 +67,8 @@
                 size = ' double';
             }
             partnersHTML += '<div class="partner' + size + '">\
-                                <a href="' + partner[1] + '" target="_blank">\
-                                    <img src="./img/sponsors/min/' + partner[0] + '">\
+                                <a href="' + partner[1] + '" target="_blank" rel="noreferrer">\
+                                    <img src="./img/sponsors/min/' + partner[0] + '" alt="Kviečia giedoti Tautišką giesmę">\
                                 </a>\
                             </div>';
         }
@@ -80,11 +82,45 @@
     window.addEventListener('load', function(){
         insertYoutube();
         renderPartners();
+        runClock();
     });
 
     function insertYoutube() {
         const DOM = document.querySelector('#ode_giesmei .content');
-        return DOM.innerHTML = '<iframe src="https://www.youtube.com/embed/' + youtubeLink + '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>';
+        return DOM.innerHTML = '<iframe title="' + youtubeLinkTitle + '" src="https://www.youtube.com/embed/' + youtubeLink + '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>';
+    }
+
+    function runClock() {
+        const end = Date.parse(timerDate);
+        let now = Date.now(),
+            diff = (end - now) / 1000;
+
+        if ( diff > 0 ) {
+            updateClock( diff );
+
+            let clock = setInterval(() => {
+                now = Date.now();
+                diff = (end - now) / 1000;
+                updateClock( diff );
+                if ( diff <= 0 ) {
+                    clearInterval(clock);
+                }
+            }, 60000);
+        }
+    }
+
+    function updateClock( diff ) {
+        const clock = document.querySelectorAll('#laikrodis .clock > .time'),
+            days = clock[0].querySelector('.value'),
+            hours = clock[1].querySelector('.value'),
+            minutes = clock[2].querySelector('.value'),
+            daysLeft = Math.floor(diff / 86400),
+            hoursLeft = Math.floor((diff - daysLeft * 86400) / 3600),
+            minutesLeft = Math.floor(diff % 3600 / 60);
+
+            days.innerText = daysLeft < 10 ? '0'+daysLeft : daysLeft;
+            hours.innerText = hoursLeft < 10 ? '0'+hoursLeft : hoursLeft;
+            minutes.innerText = minutesLeft < 10 ? '0'+minutesLeft : minutesLeft;
     }
 
 })();
