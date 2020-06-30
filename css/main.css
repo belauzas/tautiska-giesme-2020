@@ -174,12 +174,11 @@ body {
     padding-bottom: 120px;
     background-color: #04334F;
     background-image: url(../img/waves.png);
-    overflow-x: hidden;
 }
 
 header {
     width: 100%;
-    padding: 0 20px;
+    height: 200px;
     background-color: #F3BC00;
     position: relative;
 }
@@ -192,22 +191,31 @@ header {
         height: 24px;
         background-image: url(../img/orange-wave.png);
     }
-    header > .logo {
-        max-width: 100%;
-        max-height: 250px;
-        width: 50vmin;
-        height: 50vmin;
-        object-fit: contain;
-        object-position: left;
-    }
-    header > .bridge {
-        max-width: 100%;
-        max-height: 250px;
+    header > .banner {
+        width: 100%;
+        height: 244px;
         position: absolute;
-        bottom: -40px;
-        left: calc(55vmin + 40px);
-        z-index: 1;
+        top: 0;
+        right: 0;
+        left: 0;
+        overflow: hidden;
     }
+        .banner > .logo {
+            width: 160px;
+            height: 160px;
+            object-fit: contain;
+            object-position: left top;
+            position: absolute;
+            top: 0;
+            left: 20px;
+        }
+        .banner > .bridge {
+            height: 100%;
+            position: absolute;
+            bottom: -40px;
+            left: calc(100px + 20vw);
+            z-index: 1;
+        }
 
 main {
     width: 100%;
@@ -478,6 +486,14 @@ section.yellow {
         }
 
 @media (min-width: 1040px) {
+    .banner > .logo {
+        width: 200px;
+        height: 200px;
+        left: calc(50% - 480px);
+    }
+    .banner > .bridge {
+        left: calc(50% - 280px + 5vw);
+    }
     main {
         width: 960px;
         padding: 15px 0;

@@ -32,25 +32,15 @@
         ['15min.png', 'https://www.15min.lt/'],
         ['delfi.png', 'https://www.delfi.lt/'],
         ['rc.png', 'https://www.rc.lt/'],
+    ];
+    const partners = [
         ['relax-fm.png', 'https://relaxfm.lt/'],
         ['rusradio-lt.png', 'https://rusradio.lt/'],
         ['rock-fm.png', 'https://rockfm.lt/'],
         ['zip-fm.png', 'https://www.zipfm.lt/'],
-    ];
-    const partners = [
-        // ['lrt.png', 'https://www.lrt.lt/'],
-        // ['lnk-grupe-2.PNG', 'https://lnk.lt/', 2],
-        // ['lr-grupe.png', 'https://www.lrytas.lt/'],
-        // ['15min.png', 'https://www.15min.lt/'],
-        // ['delfi.png', 'https://www.delfi.lt/'],
-        // ['rc.png', 'https://www.rc.lt/'],
-        // ['relax-fm.png', 'https://relaxfm.lt/'],
-        // ['rusradio-lt.png', 'https://rusradio.lt/'],
-        // ['rock-fm.png', 'https://rockfm.lt/'],
-        // ['zip-fm.png', 'https://www.zipfm.lt/'],
         ['susisiekimo-paslaugos.png', 'https://www.vilniaus-susisiekimo-paslaugos.lt'],
         ['vilnius.png', 'https://vilnius.lt/'],
-        ['lsa.png', 'https://www.savivaldybiu-asociacija.lt/'],
+        ['lsa.png', 'https://www.savivaldybiu-asociacija.lt/', 2],
         ['lk.png', 'https://www.lietuvos-kariuomene.lt/'],
         ['global-lithuanian-leaders.png', 'https://www.global-lithunian-leaders.lt/'],
         ['plb.png', 'http://plbe.org/'],
