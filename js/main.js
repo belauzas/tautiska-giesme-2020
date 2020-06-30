@@ -39,6 +39,7 @@
         ['rock-fm.png', 'https://rockfm.lt/'],
         ['zip-fm.png', 'https://www.zipfm.lt/'],
         ['susisiekimo-paslaugos.png', 'https://www.vilniaus-susisiekimo-paslaugos.lt'],
+        ['LRVK_logo_LT.png', 'https://lrvk.lrv.lt/'],
         ['vilnius.png', 'https://vilnius.lt/'],
         ['lsa.png', 'https://www.savivaldybiu-asociacija.lt/', 2],
         ['lk.png', 'https://www.lietuvos-kariuomene.lt/'],
@@ -55,6 +56,7 @@
         ['RIMI.png', 'https://www.rimi.lt/'],
         ['citybee.png', 'https://www.citybee.lt/'],
         ['IKI.png', 'https://www.iki.lt/'],
+        ['VVT_logo.png', 'http://www.vilniausviesasistransportas.lt/'],
         ['keliautojai.png', 'https://lkakeliautojai.lt/'],
     ];
 
