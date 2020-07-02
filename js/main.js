@@ -59,6 +59,9 @@
         ['IKI.png', 'https://www.iki.lt/'],
         ['VVT_logo.png', 'http://www.vilniausviesasistransportas.lt/'],
         ['keliautojai.png', 'https://lkakeliautojai.lt/'],
+        ['olimpinis.png', 'https://www.ltok.lt/'],
+        ['lteam.png', 'https://www.ltok.lt/'],
+        ['cup.png', 'https://cupvilnius.lt/'],
     ];
 
     function renderPartners( selector, list ) {
