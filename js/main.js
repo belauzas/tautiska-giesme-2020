@@ -27,12 +27,14 @@
      ********************************/
     const watchLive = [
         ['lrt.png', 'https://www.lrt.lt/'],
+        ['delfi-blue.png', 'https://www.delfi.lt/'],
         ['15min.png', 'https://www.15min.lt/'],
-        ['delfi.png', 'https://www.delfi.lt/'],
         ['lr-grupe.png', 'https://www.lrytas.lt/'],
     ];
     const partners = [
         ['LRVK_logo_LT.png', 'https://lrvk.lrv.lt/'],
+        ['km.png', 'https://lrkm.lrv.lt/lt/'],
+        ['urm-be-teksto.png', 'https://www.urm.lt/default/lt/'],
         ['vilnius.png', 'https://vilnius.lt/'],
         ['lsa.png', 'https://www.savivaldybiu-asociacija.lt/', 2],
         ['global-lithuanian-leaders.png', 'https://www.global-lithunian-leaders.lt/'],
