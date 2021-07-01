@@ -49,6 +49,7 @@
         ['olimpinis.png', 'https://www.ltok.lt/'],
         ['lteam.png', 'https://www.ltok.lt/'],
         ['cup.png', 'https://cupvilnius.lt/'],
+        ['makalius.png', 'https://www.makalius.lt/'],
     ];
 
     function renderPartners(selector, list) {
