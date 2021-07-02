@@ -34,7 +34,7 @@
     const partners = [
         ['LRVK_logo_LT.png', 'https://lrvk.lrv.lt/'],
         ['km.png', 'https://lrkm.lrv.lt/lt/'],
-        ['urm-be-teksto.png', 'https://www.urm.lt/default/lt/'],
+        ['urm-naujas.png', 'https://www.urm.lt/default/lt/'],
         ['vilnius.png', 'https://vilnius.lt/'],
         ['lsa.png', 'https://www.savivaldybiu-asociacija.lt/', 2],
         ['global-lithuanian-leaders.png', 'https://www.global-lithunian-leaders.lt/'],
@@ -50,6 +50,7 @@
         ['lteam.png', 'https://www.ltok.lt/'],
         ['cup.png', 'https://cupvilnius.lt/'],
         ['makalius.png', 'https://www.makalius.lt/'],
+        ['sportland.png', 'https://sportland.lt/'],
     ];
 
     function renderPartners(selector, list) {
