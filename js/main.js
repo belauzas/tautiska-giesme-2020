@@ -1,7 +1,7 @@
 (function () {
-    const youtubeLink = '8ocKUv_GJss',
+    const youtubeLink = 'ZO4lOLMJN20',
         youtubeLinkTitle = 'Tautiška giesmė aplink pasaulį 2020',
-        timerDate = 'Jul 6, 2021 21:00';
+        timerDate = 'Jul 6, 2022 21:00';
 
     /*********************************
      * H2 UPDATE
@@ -55,6 +55,9 @@
 
     function renderPartners(selector, list) {
         const DOMlist = document.querySelector(selector);
+        if (!DOMlist) {
+            return;
+        }
         const listCount = list.length;
         let listHTML = '';
         let size = '';
