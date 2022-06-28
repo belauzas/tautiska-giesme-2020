@@ -1,23 +1,24 @@
 {
-  "name": "tautiska-giesme-2020",
-  "version": "1.0.0",
-  "description": "[![HitCount](http://hits.dwyl.com/front-end-by-rimantas/tautiska-giesme-2020.svg)](http://hits.dwyl.com/front-end-by-rimantas/tautiska-giesme-2020)",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/belauzas/tautiska-giesme-2020.git"
-  },
-  "keywords": [],
-  "author": "Rimantas",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/belauzas/tautiska-giesme-2020/issues"
-  },
-  "homepage": "https://github.com/belauzas/tautiska-giesme-2020#readme",
-  "devDependencies": {
-    "dead-server": "^1.0.6"
-  }
+    "name": "tautiska-giesme-2020",
+    "version": "1.0.0",
+    "description": "[![HitCount](http://hits.dwyl.com/front-end-by-rimantas/tautiska-giesme-2020.svg)](http://hits.dwyl.com/front-end-by-rimantas/tautiska-giesme-2020)",
+    "main": "index.js",
+    "scripts": {
+        "dev": "dead-server --port=3000 --host=localhost",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/belauzas/tautiska-giesme-2020.git"
+    },
+    "keywords": [],
+    "author": "Rimantas",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/belauzas/tautiska-giesme-2020/issues"
+    },
+    "homepage": "https://github.com/belauzas/tautiska-giesme-2020#readme",
+    "devDependencies": {
+        "dead-server": "^1.0.6"
+    }
 }
