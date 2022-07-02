@@ -1,6 +1,6 @@
 (function () {
-    const youtubeLink = 'der34bXsb9I',
-        youtubeLinkTitle = 'Tautiška giesmė aplink pasaulį 2020',
+    const youtubeLink = 'ZO4lOLMJN20',
+        youtubeLinkTitle = 'Tautiška giesmė aplink pasaulį 2022',
         timerDate = 'Jul 6, 2022 21:00';
 
     /*********************************
