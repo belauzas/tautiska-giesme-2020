@@ -19,6 +19,6 @@
     },
     "homepage": "https://github.com/belauzas/tautiska-giesme-2020#readme",
     "devDependencies": {
-        "dead-server": "^1.0.6"
+        "dead-server": "^1.0.9"
     }
 }

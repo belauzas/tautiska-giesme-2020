@@ -1,7 +1,7 @@
 (function () {
-    const youtubeLink = 'ZO4lOLMJN20',
-        youtubeLinkTitle = 'Tautiška giesmė aplink pasaulį 2022',
-        timerDate = 'Jul 6, 2022 21:00';
+    const youtubeLink = 'bAXc0xWhqSw',
+        youtubeLinkTitle = 'Tautiška giesmė aplink pasaulį 2023',
+        timerDate = 'Jul 6, 2023 21:00';
 
     /*********************************
      * H2 UPDATE
@@ -68,10 +68,10 @@
                 size = ' double';
             }
             listHTML += '<div class="partner' + size + '">\
-                                <a href="' + partner[1] + '" target="_blank" rel="noreferrer">\
-                                    <img src="./img/sponsors/min/' + partner[0] + '" alt="Kviečia giedoti Tautišką giesmę">\
-                                </a>\
-                            </div>';
+                            <a href="' + partner[1] + '" target="_blank" rel="noreferrer">\
+                                <img src="./img/sponsors/min/' + partner[0] + '" alt="Kviečia giedoti Tautišką giesmę">\
+                            </a>\
+                        </div>';
         }
         DOMlist.innerHTML = listHTML;
     }
