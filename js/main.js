@@ -1,5 +1,5 @@
 (function () {
-    const youtubeLink = 'bAXc0xWhqSw',
+    const youtubeLink = '1RnclqH4NpY',
         youtubeLinkTitle = 'Tautiška giesmė aplink pasaulį 2023',
         timerDate = 'Jul 6, 2023 21:00';
 
