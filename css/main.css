@@ -191,13 +191,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
-    max-height: 244px;
     padding: 15px 25px;
 }
 header > .logo {
     display: none;
-    width: 240px;
     height: 240px;
     object-fit: contain;
     object-position: center left;
@@ -206,19 +203,13 @@ header > img.banner {
     max-width: 100%;
     max-height: 200px;
     object-fit: contain;
-    object-position: left center;
+    object-position: right center;
 }
 header > h1.banner {
     display: flex;
-    flex-wrap: wrap;
-    max-width: 100%;
-    max-height: 200px;
-    margin-top: calc(80px - 5vmin);
+    padding: 0.5rem 1.5rem;
     font-size: clamp(40px, 6.5vmin, 55px);
-}
-header > h1.banner > span {
-    padding: 0.1em 0.15em;
-    color: #fff;
+    color: #d6e8b2;
     background-color: #154a2a;
 }
 
@@ -489,19 +480,13 @@ section.yellow > h2 > .end::after {
     object-fit: contain;
 }
 
-@media (min-width: 850px) {
+@media (min-width: 750px) {
     header > .logo {
         display: inline-block;
-    }
-    header > h1.banner {
-        width: 65%;
     }
 }
 
 @media (min-width: 1040px) {
-    header > h1.banner {
-        width: 58%;
-    }
     header,
     main {
         width: 960px;
