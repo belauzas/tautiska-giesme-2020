@@ -1,7 +1,7 @@
 (function () {
-    const youtubeLink = '1RnclqH4NpY',
-        youtubeLinkTitle = 'Tautiška giesmė aplink pasaulį 2023',
-        timerDate = 'Jul 6, 2023 21:00';
+    const youtubeLink = 'bhtSNCjRXeQ';
+    const youtubeLinkTitle = 'Tautiška giesmė aplink pasaulį 2024';
+    const timerDate = 'Jul 6, 2024 21:00';
 
     /*********************************
      * H2 UPDATE
@@ -23,67 +23,11 @@
     }
 
     /*********************************
-     * PARTNERS UPDATE
-     ********************************/
-    const watchLive = [
-        ['lrt.png', 'https://www.lrt.lt/'],
-        ['delfi-blue.png', 'https://www.delfi.lt/'],
-        ['15min.png', 'https://www.15min.lt/'],
-        ['lr-grupe.png', 'https://www.lrytas.lt/'],
-    ];
-    const partners = [
-        ['LRVK_logo_LT.png', 'https://lrvk.lrv.lt/'],
-        ['km.png', 'https://lrkm.lrv.lt/lt/'],
-        ['urm-naujas.png', 'https://www.urm.lt/default/lt/'],
-        ['vilnius.png', 'https://vilnius.lt/'],
-        ['lsa.png', 'https://www.savivaldybiu-asociacija.lt/', 2],
-        ['global-lithuanian-leaders.png', 'https://www.global-lithunian-leaders.lt/'],
-        ['plb.png', 'http://plbe.org/'],
-        ['sauliu-sajunga.png', 'https://www.sauliu-sajunga.lt/'],
-        ['akropolis.png', 'http://akropolis.lt'],
-        ['PANORAMA.png', 'https://www.panorama.lt'],
-        ['RIMI.png', 'https://www.rimi.lt/'],
-        ['IKI.png', 'https://www.iki.lt/'],
-        ['VVT_logo.png', 'http://www.vilniausviesasistransportas.lt/'],
-        ['keliautojai.png', 'https://lkakeliautojai.lt/'],
-        ['olimpinis.png', 'https://www.ltok.lt/'],
-        ['lteam.png', 'https://www.ltok.lt/'],
-        ['cup.png', 'https://cupvilnius.lt/'],
-        ['makalius.png', 'https://www.makalius.lt/'],
-        ['sportland.png', 'https://sportland.lt/'],
-    ];
-
-    function renderPartners(selector, list) {
-        const DOMlist = document.querySelector(selector);
-        if (!DOMlist) {
-            return;
-        }
-        const listCount = list.length;
-        let listHTML = '';
-        let size = '';
-        for (let i = 0; i < listCount; i++) {
-            const partner = list[i];
-            size = '';
-            if (partner[2] && partner[2] > 1) {
-                size = ' double';
-            }
-            listHTML += '<div class="partner' + size + '">\
-                            <a href="' + partner[1] + '" target="_blank" rel="noreferrer">\
-                                <img src="./img/sponsors/min/' + partner[0] + '" alt="Kviečia giedoti Tautišką giesmę">\
-                            </a>\
-                        </div>';
-        }
-        DOMlist.innerHTML = listHTML;
-    }
-
-    /*********************************
      * ON PAGE LOAD
      ********************************/
 
     window.addEventListener('load', function () {
         insertYoutube();
-        renderPartners('#stebek_rengini .content', watchLive);
-        renderPartners('#giedoti_kviecia .content', partners);
         runClock();
     });
 
@@ -107,7 +51,7 @@
                 if (diff <= 0) {
                     clearInterval(clock);
                 }
-            }, 60000);
+            }, 1000);
         }
     }
 

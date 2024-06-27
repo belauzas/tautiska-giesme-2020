@@ -173,20 +173,34 @@ section.yellow .btn:hover {
 body {
     width: 100%;
     padding-bottom: 120px;
-    background-color: #f6b134;
-    background-image: url(../img/arka.webp);
-    /* background-size: 100%; */
+    background-color: #154a2a;
+    background-image: url(../img/TG_web-fixed.jpg);
+    background-size: 100%;
     background-position: top center;
     background-repeat: no-repeat;
 }
 
+@media (max-width: 1000px) {
+    body {
+        background-size: cover;
+        background-position: center;
+    }
+}
+
 header {
-    width: 100%;
-    max-height: 244px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
+    max-height: 244px;
     padding: 15px 25px;
+}
+header > .logo {
+    display: none;
+    width: 240px;
+    height: 240px;
+    object-fit: contain;
+    object-position: center left;
 }
 header > img.banner {
     max-width: 100%;
@@ -195,18 +209,17 @@ header > img.banner {
     object-position: left center;
 }
 header > h1.banner {
+    display: flex;
+    flex-wrap: wrap;
     max-width: 100%;
     max-height: 200px;
     margin-top: calc(80px - 5vmin);
-    font-size: clamp(40px, 7vmin, 70px);
-    color: #fff;
+    font-size: clamp(40px, 6.5vmin, 55px);
 }
-header > .logo {
-    display: none;
-    width: 240px;
-    height: 240px;
-    object-fit: contain;
-    object-position: top right;
+header > h1.banner > span {
+    padding: 0.1em 0.15em;
+    color: #fff;
+    background-color: #154a2a;
 }
 
 main {
@@ -480,9 +493,15 @@ section.yellow > h2 > .end::after {
     header > .logo {
         display: inline-block;
     }
+    header > h1.banner {
+        width: 65%;
+    }
 }
 
 @media (min-width: 1040px) {
+    header > h1.banner {
+        width: 58%;
+    }
     header,
     main {
         width: 960px;
